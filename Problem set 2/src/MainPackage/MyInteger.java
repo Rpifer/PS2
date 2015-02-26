@@ -1,9 +1,12 @@
+//Robert Pifer PS2
+
 package MainPackage;
 
 public class MyInteger {
-
+	//Private attributes
 	private int value;
 
+	//public constructors and getters and methods
 	public MyInteger(int value) {
 		this.value = value;
 	}
@@ -21,6 +24,7 @@ public class MyInteger {
 	}
 
 	public boolean isPrime() {
+		//must only check up to sqrt of the number to check all factors
 		double max = Math.sqrt(this.value);
 		for (int factor = 2; factor <= max; factor++) {
 			if ((this.value % factor) == 0) {
