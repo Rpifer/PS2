@@ -9,7 +9,7 @@ public class MyInteger {
 	}
 
 	public int getValue() {
-		return value;
+		return this.value;
 	}
 
 	public boolean isEven() {
